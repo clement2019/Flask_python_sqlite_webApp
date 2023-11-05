@@ -167,7 +167,7 @@ def edit(id):
             conn = get_db_connect()
             conn.execute('UPDATE students SET name= ?, addr= ?,city= ?, pin= ?'
                          ' WHERE id = ?',
-                         (name, addr,city,pin,id))
+                         (name,addr,city,pin,id))
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
