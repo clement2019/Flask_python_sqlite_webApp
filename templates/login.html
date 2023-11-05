@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <html>
    <body>
       <form action = "{{ url_for('log') }}" method = "POST">
@@ -9,8 +13,9 @@
          <input type = "text" name = "pin" /><br>
          <input type = "submit" value = "login" /><br>
         
-        
+       
       </form>
      
    </body>
 </html>
+{% endblock %}

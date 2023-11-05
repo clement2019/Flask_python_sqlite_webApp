@@ -1,0 +1,12 @@
+
+DROP TABLE IF EXISTS students;
+
+
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  addr TEXT NOT NULL,
+  city TEXT NOT NULL,
+  pin TEXT NOT NULL
+  
+);

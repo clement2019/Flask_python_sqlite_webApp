@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <html>
    <body>
       <form action = "{{ url_for('addrec') }}" method = "POST">
@@ -6,7 +10,7 @@
          <input type = "text" name = "nm" /></br>
          
          Address<br>
-         <textarea name = "add" ></textarea><br>
+         <textarea name = "addr" ></textarea><br>
          
          City<br>
          <input type = "text" name = "city" /><br>
@@ -17,3 +21,4 @@
       </form>
    </body>
 </html>
+{% endblock %}

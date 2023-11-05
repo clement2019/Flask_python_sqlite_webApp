@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2><a href = "/enternew">Enter new student</a></h2>
+    <h1>{% block title %} Students Records {% endblock %}</h1>
+    {% for rows in rows %}
+        <div class='rows'>
+            <p>{{ rows['name'] }}</p>
+            <h2>{{ rows['addr'] }}</h2>
+            <p>{{ rows['city'] }}</p>
+            <p>{{ rows['pin'] }}</p>
+            <a href="{{ url_for('edit', id=rows['id']) }}">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock %}
